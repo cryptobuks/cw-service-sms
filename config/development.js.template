@@ -1,0 +1,24 @@
+module.exports = {
+  fastify: { active: true },
+  rabbitmq: { active: true, server: 'localhost:15672', user: 'dev', password: 'dev123' },
+  redis: { active: true, server: 'localhost', port: 16379 },
+  options: {
+    userKey: '',
+    accessToken: ''
+  },
+  mongodb: {
+    active: true,
+    server: 'localhost',
+    port: '37017',
+    user: '',
+    password: '',
+    debug: true,
+    databases: [
+      {
+        name: 'data',
+        db: 'sms',
+        options: {}
+      }
+    ]
+  }
+}

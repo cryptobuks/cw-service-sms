@@ -1,0 +1,19 @@
+module.exports = {
+  fastify: { active: true },
+  redis: { active: true },
+  rabbitmq: { active: true },
+  options: {
+    userKey: '',
+    accessToken: ''
+  },
+  mongodb: {
+    active: true,
+    databases: [
+      {
+        name: 'data',
+        db: 'sms',
+        options: {}
+      }
+    ]
+  }
+}
